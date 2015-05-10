@@ -1,0 +1,39 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Audrey Dilling
+    %link{:type => "text/css", :rel => "stylesheet", :href => "stylesheets/index.css"}
+    -# = javascript_include_tag "vendor/modernizr"
+    -# = csrf_meta_tags
+  %body
+    .row.up-top.full-width
+      .small-12.medium-4.large-6.columns.namelogo
+        %h1 Audrey Dilling
+      .small-12.medium-8.large-6.columns
+        .nav-bar
+          %ul.button-group
+            %li
+              %a.button{:href => "#"} Home
+            %li
+              %a.button{:href => "#"} Sounds
+            %li
+              %a.button{:href => "#"} Contact
+
+    = yield
+
+    %footer.row
+      .large-12.columns
+        .row
+          .large-6.columns
+            %p © Copyright 2015
+          .large-6.columns
+            %ul.inline-list.right
+              %li
+                %a{:href => "#"} FAQ
+              %li
+                %a{:href => "#"} Privacy
+              %li
+                %a{:href => "#"} Suscribe
+

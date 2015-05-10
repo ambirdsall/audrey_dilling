@@ -1,3 +1,51 @@
-%h1 hey there
-
-%p how's things, buddy?
+.hero
+  .row
+    .large-12.columns.intro-text
+      %p
+        Happy birthday, love!
+        %br - Alex
+.row.about
+  .medium-6.large-8.columns
+    %h4 About
+    %p
+      Audrey Dilling is a reporter and producer with 
+      %a{:href => "http://www.kalw.org"}KALW 
+      San Francisco. She is also super fucking cool and funny and pretty and professional and is basically the best. If you don't know her, I really hope you get the chance, buddy! And hey, even if you can't, you should DEFINITELY check out her
+      %a{:href => "#"} work
+      = "."
+  .medium-6.large-4.columns
+    %img{:src => "http://placehold.it/550x300"}
+.row.work
+  %hr
+    .large-12.columns
+      %h4 Work
+      %p Click on each image to view my work!
+      %ul.clearing-thumbs.small-block-grid-1.medium-block-grid-2.large-block-grid-4{"data-clearing" => ""}
+        %li
+          %a{:href => "http://placehold.it/550x300"}
+            %img{"data-caption" => "caption here", :src => "http://placehold.it/550x300"}/
+        %li
+          %a{:href => "http://placehold.it/550x300"}
+            %img{"data-caption" => "caption 2 here...", :src => "http://placehold.it/550x300"}/
+        %li
+          %a{:href => "http://placehold.it/550x300"}
+            %img{"data-caption" => "caption 3 here...", :src => "http://placehold.it/550x300"}/
+        %li
+          %a{:href => "http://placehold.it/550x300"}
+            %img{"data-caption" => "caption 4 here...", :src => "http://placehold.it/550x300"}/
+.row.contact
+  %hr
+    .large-12.columns
+      %h4 Contact Me
+      .large-4.columns
+        %strong> Email
+        \:
+        %a{:href => "#"}
+          %span.__cf_email__{"data-cfemail" => "4b262e0b26323b24393f2d2427222465282426"} [email protected]
+      .large-4.columns
+        %strong> Twitter
+        \:
+        %a{:href => "https://twitter.com/audreydilling"} @audreydilling
+      .large-4.columns
+        %strong> Phone
+        \: 555-555-1234
