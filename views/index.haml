@@ -10,10 +10,11 @@
       Audrey Dilling is a reporter and producer with 
       %a{:href => "http://www.kalw.org"}KALW 
       San Francisco. She is also super fucking cool and funny and pretty and professional and is basically the best. If you don't know her, I really hope you get the chance, buddy! And hey, even if you can't, you should DEFINITELY check out her
-      %a{:href => "#"} work
+      %a{:href => "http://kalw.org/people/audrey-dilling"} work
       = "."
   .medium-6.large-4.columns
-    %img{:src => "http://placehold.it/550x300"}
+    .round-image-container
+      %img{:src => "images/audrey_about.jpg"}
 .row.work
   %hr
     .large-12.columns
@@ -32,19 +33,6 @@
         %li
           %a{:href => "http://placehold.it/550x300"}
             %img{"data-caption" => "caption 4 here...", :src => "http://placehold.it/550x300"}/
-.row.contact
-  %hr
-    .large-12.columns
-      %h4 Contact Me
-      .large-4.columns
-        %strong> Email
-        \:
-        %a{:href => "#"}
-          %span.__cf_email__{"data-cfemail" => "4b262e0b26323b24393f2d2427222465282426"} [email protected]
-      .large-4.columns
-        %strong> Twitter
-        \:
-        %a{:href => "https://twitter.com/audreydilling"} @audreydilling
-      .large-4.columns
-        %strong> Phone
-        \: 555-555-1234
+
+%script
+  $(document).ready(function(){$('.home-button').addClass("disabled secondary");});

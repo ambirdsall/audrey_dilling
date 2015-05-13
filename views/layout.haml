@@ -22,24 +22,33 @@
         .nav-bar
           %ul.button-group
             %li
-              %a.button{:href => "#"} Home
+              %a.button.home-button{:href => "/"} Home
             %li
-              %a.button{:href => "/sounds"} Sounds
+              %a.button.sounds-button{:href => "/sounds"} Sounds
             %li
-              %a.button{:href => "#"} Contact
+              %a.button.contact-button{:href => "#contact"} Contact
 
     = yield
 
+    .row#contact
+      %hr
+        .large-12.columns
+          %h4 Contact Me
+          .large-4.columns
+            %strong> Email
+            \:
+            %a{:href => "mailto:audreydilling@gmail.com"}
+              audreydilling at gmail dot com
+          .large-4.columns
+            %strong> Twitter
+            \:
+            %a{:href => "https://twitter.com/audreydilling"} @audreydilling
+          .large-4.columns
+            %strong> I Dunno
+            \: three columns looked good, but I'm not giving out any other contact info without checking first.
     %footer.row
       .large-12.columns
         .row
           .large-6.columns
             %p © Copyright 2015
           .large-6.columns
-            %ul.inline-list.right
-              %li
-                %a{:href => "#"} FAQ
-              %li
-                %a{:href => "#"} Privacy
-              %li
-                %a{:href => "#"} Suscribe
