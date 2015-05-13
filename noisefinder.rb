@@ -1,19 +1,20 @@
-require 'pry'
 require 'yaml'
 require 'soundcloud'
 
-AUTH_DATA = YAML.load_file("secrets.yml")
+AUTH_DATA = YAML.load_file("secrets.yml") if File.exist?("secrets.yml")
 
 class Noisefinder
+  @@user_id = AUTH_DATA["soundcloud"]["user_id"] || ENV["AUDREY_SC_USER_ID"]
+  @@app_id = AUTH_DATA["soundcloud"]["app_id"] || ENV["SC_APP_ID"]
   def self.last_five_tracks
-    @_last_five ||= soundcloud_client.get("/users/#{AUTH_DATA["aud"]["user_id"]}/tracks").last(5)
+    @_last_five ||= soundcloud_client.get("/users/#{@@user_id}/tracks").last(5)
   end
 
   protected
 
   def self.soundcloud_client
     @_client ||= SoundCloud.new({
-      :client_id => AUTH_DATA["soundcloud_auth"]["id"],
+      :client_id => @@app_id
     })
   end
 end
