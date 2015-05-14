@@ -2,22 +2,22 @@
 
 .row
   .small-4.small-centered.columns
-    %a{:href => "#sounds", :id => "switcher", :class => "button expand radius switcher"}
+    %a{:id => "switcher", :class => "button expand radius switcher"}
       Nope, I want 
       %span.sounds_list Soundcloud tracks
 .row#sounds
-  .small-6.small-centered.columns.noises.kalw
-    %h2
+  .small-7.small-centered.columns.noises.kalw
+    %h2.sounds_title
       %a{:href => "http://www.kalw.org/people/audrey-dilling"} KALW Stories
     - stories.each_with_index do |entry, i|
       .story.panel
-        %h3
-          %a{:href => entry.url}= entry.title
+        %h3= entry.title
         - if entry.image
           %img{:src => entry.image, :alt => i+1}
         = entry.summary
-  .small-6.small-centered.columns.noises.soundcloud.hide
-    %h2
+        %a{:href => entry.url, :class => "button radius"} Get the whole story
+  .small-7.small-centered.columns.noises.soundcloud.hide
+    %h2.sounds_title
       %a{:href => "http://www.soundcloud.com/audiodrey"} Soundcloud Tracks
     - track_ids.each_with_index do |id, index|
       .track.panel

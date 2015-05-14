@@ -9536,6 +9536,10 @@ body {
   background-position: center;
 }
 
+.sounds_title {
+  text-align: center;
+}
+
 .switcher {
   margin: 1.25rem 0 0.75rem;
 }
