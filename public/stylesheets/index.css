@@ -9536,6 +9536,10 @@ body {
   background-position: center;
 }
 
+.switcher {
+  margin: 1.25rem 0 0.75rem;
+}
+
 /* line 82, ../scss/index.scss */
 .intro-text {
   padding-top: 40%;
