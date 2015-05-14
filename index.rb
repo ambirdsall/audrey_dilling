@@ -2,7 +2,11 @@ require 'sinatra'
 require_relative 'noisefinder'
 
 get '/' do
-  haml :index
+  stories_with_image = Noisefinder.last_five_stories.select do |e|
+    e.image
+  end.take(4)
+
+  haml :index, :locals => {:stories_with_image => stories_with_image}
 end
 
 get '/sounds' do
