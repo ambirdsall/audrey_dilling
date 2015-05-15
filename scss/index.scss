@@ -82,6 +82,20 @@ body {
   background: image-url("rusts_cohle.jpg");
 }
 
+.sounds-banner {
+  background: image-url("sounds_banner.jpg");
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.sounds_title {
+  text-align: center;
+}
+
+.switcher {
+  margin: 1.25rem 0 0.75rem;
+}
+
 .intro-text {
   padding-top: 40%;
   color: rgba(255,255,255,1);
