@@ -1,29 +1,11 @@
-# Foundation Compass Template
+# Audrey Dilling
 
-The easiest way to get started with Foundation + Compass.
+I built this site as a portfolio for my girlfriend (I assume you can figure out who that is).
 
-## Requirements
+## Technical Details
+It's a small Sinatra app, using the Foundation front-end framework for a simple, responsive, mobile-first layout that doesn't look like every Bootstrap site in the world (nothing wrong with Bootstrap, but it's sort of ubiquitous). I used Feedjira to parse KALW's RSS feed for Audrey's work and the Soundcloud ruby wrapper to grab the IDs of her Soundcloud tracks.
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+I realize it's silly and redundant to keep both the scss files and their compiled CSS under version control, but because this is deployed through Heroku, files in the .gitignore get left behind.
 
-## Quickstart
-
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
-
-```bash
-bundle exec compass watch
-```
-
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```
+## Legal Details
+Copyright me, 2015
